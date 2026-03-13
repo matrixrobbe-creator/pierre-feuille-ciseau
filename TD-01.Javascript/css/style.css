@@ -1,0 +1,83 @@
+/* --- style.css --- */
+
+/* On centre tout le contenu et on définit une police propre */
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    text-align: center;
+    background-color: #f0f2f5;
+    color: #1c1e21;
+    margin: 0;
+    padding: 50px 20px;
+}
+
+h1 {
+    margin-bottom: 10px;
+    color: #2c3e50;
+}
+
+/* Zone des boutons de jeu */
+#choixUtilisateur {
+    margin: 40px 0;
+}
+
+.choix {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 18px;
+    margin: 5px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.2s, background-color 0.2s;
+}
+
+.choix:hover {
+    background-color: #2980b9;
+    transform: translateY(-3px); /* Petit effet de levier au survol */
+}
+
+/* Boîte de score et de résultat */
+#score, #resultat {
+    background: white;
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+#score p {
+    font-size: 1.1rem;
+    margin: 10px 0;
+}
+
+#affichageChoixJoueur, #affichageChoixOrdi {
+    font-weight: bold;
+    color: #e67e22; /* Une couleur qui ressort pour les choix */
+}
+
+/* Zone du bouton Recommencer */
+#reset {
+    margin-top: 30px;
+}
+
+/* On cible spécifiquement le bouton à l'intérieur de la div #reset */
+button#reset {
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    padding: 10px 25px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: opacity 0.2s;
+    /* Ces deux lignes empêchent le bouton de s'étaler sur toute la largeur */
+    display: inline-block; 
+    width: auto;
+}
+
+button#reset:hover {
+    opacity: 0.9;
+    background-color: #c0392b;
+}
